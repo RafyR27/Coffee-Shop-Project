@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&display=swap');
+
+::-webkit-scrollbar{
+    width:7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    font-family: "Balsamiq Sans", sans-serif;
+
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url("images/kopi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0,0,0), rgba(0,0,0,0));
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    transition: 1s;
+}
+
+nav.black{
+    background: black;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.title-btn{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-user{
+    width: 37px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    border: 0px solid;
+    border-radius: 20px ;
+    background: white;
+    transition: 3ms;
+    cursor: pointer;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.btn-user:hover{
+    color: white;
+    background: black;
+}
+
+.btn-shop{
+    width: 37px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+    border: 0px solid;
+    border-radius: 20px ;
+    background: white;
+    transition: 3ms;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-shop:hover{
+    color: white;
+    background: black;
+}
+
+
+.logo-mid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40vh;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    transition: 1s;
+}
+
+span.black p{
+    color: rgba(0, 0, 0, 0);
+}
+
+/* about */
+#about{
+    width: 100%;
+    height: 112vh;
+    padding: 3rem 2.5rem;
+}
+
+.about-konten{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+img{
+    width: 350px;
+    height: 130%;
+    object-fit: cover;
+    object-position: 25% 25%;
+    margin: auto;
+}
+
+.btn-1{
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    transition: 3ms;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    color: black;
+    background-color: white;
+}
+
+.img-1 h3{
+    font-family: "Baskervville SC", serif;
+    letter-spacing: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.img-1{
+    padding-left: 30px;
+}
+
+/* shop */
+#main-shop{
+    width: 100%;
+    height: 120vh;
+    margin: 0;
+    padding: 3rem 2.5rem;
+}
+
+.shop-title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: "Baskervville SC", serif;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.img-shop-1{
+    padding: 10px;
+}
+
+.shop-img-1{
+    width: 310px;
+    height: 130%;
+    object-fit: cover;
+    object-position: 70% 25%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-img-2{
+    width: 310px;
+    height: 130%;
+    object-fit: cover;
+    object-position: 70% 25%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-img-3{
+    width: 310px;
+    height: 130%;
+    object-fit: cover;
+    object-position: 50% 25%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-par{
+    font-family: "Baskervville SC", serif;
+}
+
+/* Location */
+#location{
+    padding: 3rem 2.5rem;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background: url(images/location-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.location-par{
+    width: 37%;
+    padding: 30px;
+    margin-top: 35px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    font-family: "Baskervville SC", serif;
+}
+
+.location-par h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.location-par h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.location-par p{
+    margin-top: -3px;
+    margin-bottom: -3px;
+    margin-left: 16px;
+}
+
+/* Footer */
+#footer{
+    width: 100%;
+    height: 50vh;
+    padding: 3rem 2.5rem;
+    background: black;
+    border-top: 2px solid white;
+    font-family: "Baskervville SC", serif;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 2px;
+    margin-left: 50px;
+    margin-right: 200px;
+}
+
+.title-footer{
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.kopigo p{
+    margin-top: 10px;
+}
+
+.info li{
+    list-style-type:  none;
+    margin-top: 10px;
+}
+
+.location li{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.sign-up input{
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Baskervville SC", serif;
+    background: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+}
+
+.fa-envelope{
+    position: absolute;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 40px;
+}
+
+.icon-ig-fb{
+    margin-top: 20px;
+}
+
+.fa-instagram{
+    font-size: 27px;
+    color: white;
+    margin-right: 15px;
+}
+
+.fa-tiktok{
+    font-size: 23px;
+    color: white;
+    margin-right: 15px;
+}
+
+.fa-facebook{
+    font-size: 23px;
+    color: white;
+    margin-right: 15px;
+}
+
+.outer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+}
+
+
+
+
+/* responsive */
+@media (max-width: 1025px) {
+    .logo-mid{
+        font-size: 70px;
+    }
+
+    img{
+        width: 280px;
+        padding: auto;
+        margin-top: 20px; 
+    }
+
+    .img-1{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #main-shop{
+        height: auto;
+    }
+
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+
+    .shop-img-1{
+        width: 250px;
+        height: 70%;
+    }
+    
+    .shop-img-2{
+        width: 250px;
+        height: 70%;
+    }
+
+    .shop-img-3{
+        width: 250px;
+        height: 70%;
+    }
+
+    .location-par{
+        width: 60%;
+        justify-content: left;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .location-par h4{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .location-par h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }    
+
+    .location-par p{
+        font-size: 13px;
+    }
+
+    #footer{
+        height: 60vh;
+    }
+
+    .main-footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .kopigo{
+        width: 15%;
+        margin-left: 5px;
+    }
+
+    .info{
+        width: 15%;
+        margin-left: 5px;
+    }
+
+    .location{
+        width: 15%;
+        margin-left: 5px;
+    }
+
+    .sign-up{
+        width: 30%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .outer{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+}
+
+
+@media (max-width: 769px) {
+    .logo-mid{
+        font-size: 60px;
+    }
+
+    #about{
+        height: auto;
+        padding-top: 60px;
+    }
+
+    .about-konten{
+        display: block;
+        justify-content: center;
+    }
+
+    img{
+        width: 500px;
+        padding: auto;
+        margin-top: 20px; 
+    }
+}
+
+
+
+@media (max-width: 767px) {
+/* header */
+    nav{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .logo-mid{
+        font-size: 60px;
+    }
+
+/* about */
+    #about{
+        height: auto;
+        padding-top: 60px;
+    }
+
+    .about-konten{
+        display: block;
+        justify-content: center;
+    }
+
+    img{
+        padding: auto;
+        margin-top: 20px; 
+    }
+
+    .img-1{
+        padding-left: 0;
+    }
+
+/* shop */
+    #main-shop{
+        height: auto;
+        padding-top: 0;
+    }
+
+    .shop-title{
+        text-align: center;
+    }
+
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        padding: 0;
+    }
+
+    .shop-img-1{
+        width: 150px;
+        height: 70%;
+    }
+    
+    .shop-img-2{
+        width: 150px;
+        height: 70%;
+    }
+
+    .shop-img-3{
+        width: 150px;
+        height: 70%;
+    }
+
+/* Location */
+    #location{
+        height: 76vh;
+    }
+
+    .location-par{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .location-par h4{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .location-par h3{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }    
+
+    .location-par p{
+        font-size: 13px;
+    }
+
+/* footer */
+    #footer{
+        height: 60vh;
+    }
+
+    .main-footer{
+        margin: 0;
+    }
+
+    .kopigo{
+        display: none;
+    }
+
+    .info{
+        width: 15%;
+        margin-left: 5px;
+    }
+
+    .location{
+        display: none;
+    }
+
+    .sign-up{
+        width: 60%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .outer{
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 415px) {
+    .logo-mid{
+        font-size: 45px;
+    }
+
+    img{
+        width: 280px;
+        padding: auto;
+        margin-top: 20px; 
+    }
+
+    .img-1{
+        padding: 0;
+    }
+
+    .shop{
+        padding: 0;
+    }
+
+    .shop-img-1{
+        width: 125px;
+        height: 70%;
+    }
+    
+    .shop-img-2{
+        width: 125px;
+        height: 70%;
+    }
+
+    .shop-img-3{
+        width: 125px;
+        height: 70%;
+    }
+}
+
+
+@media (min-width: 427px) {
+    img{
+        width: 340px;
+        padding: auto;
+        margin-top: 20px; 
+    }
+
+    .img-1{
+        padding-right: 0;
+    }
+}
+
+
